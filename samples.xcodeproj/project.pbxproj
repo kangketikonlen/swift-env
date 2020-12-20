@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4EBAAD4125835BD400683D2F /* samplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAAD4025835BD400683D2F /* samplesApp.swift */; };
-		4EBAAD4325835BD400683D2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAAD4225835BD400683D2F /* ContentView.swift */; };
 		4EBAAD4525835BD500683D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBAAD4425835BD500683D2F /* Assets.xcassets */; };
 		4EBAAD4825835BD500683D2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EBAAD4725835BD500683D2F /* Preview Assets.xcassets */; };
 		4EBAAD5325835BD500683D2F /* samplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAAD5225835BD500683D2F /* samplesTests.swift */; };
 		4EBAAD5E25835BD500683D2F /* samplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAAD5D25835BD500683D2F /* samplesUITests.swift */; };
+		4EBAAD8B25838CB100683D2F /* PortalLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAAD8A25838CB100683D2F /* PortalLoginView.swift */; };
+		4EBAAD9C25838FE000683D2F /* AdminDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAAD9B25838FE000683D2F /* AdminDash.swift */; };
+		4EBAADA12583A10700683D2F /* TokenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAADA02583A10700683D2F /* TokenData.swift */; };
+		4EBAADA62583BBE900683D2F /* DashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBAADA52583BBE900683D2F /* DashData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,6 @@
 /* Begin PBXFileReference section */
 		4EBAAD3D25835BD400683D2F /* samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBAAD4025835BD400683D2F /* samplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samplesApp.swift; sourceTree = "<group>"; };
-		4EBAAD4225835BD400683D2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EBAAD4425835BD500683D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EBAAD4725835BD500683D2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4EBAAD4925835BD500683D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +47,10 @@
 		4EBAAD5925835BD500683D2F /* samplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = samplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EBAAD5D25835BD500683D2F /* samplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = samplesUITests.swift; sourceTree = "<group>"; };
 		4EBAAD5F25835BD500683D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EBAAD8A25838CB100683D2F /* PortalLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalLoginView.swift; sourceTree = "<group>"; };
+		4EBAAD9B25838FE000683D2F /* AdminDash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDash.swift; sourceTree = "<group>"; };
+		4EBAADA02583A10700683D2F /* TokenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenData.swift; sourceTree = "<group>"; };
+		4EBAADA52583BBE900683D2F /* DashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,9 @@
 		4EBAAD3F25835BD400683D2F /* samples */ = {
 			isa = PBXGroup;
 			children = (
+				4EBAAD9A25838FCA00683D2F /* Dashboard */,
+				4EBAAD8925838C9C00683D2F /* Auth */,
 				4EBAAD4025835BD400683D2F /* samplesApp.swift */,
-				4EBAAD4225835BD400683D2F /* ContentView.swift */,
 				4EBAAD4425835BD500683D2F /* Assets.xcassets */,
 				4EBAAD4925835BD500683D2F /* Info.plist */,
 				4EBAAD4625835BD500683D2F /* Preview Content */,
@@ -128,6 +135,24 @@
 				4EBAAD5F25835BD500683D2F /* Info.plist */,
 			);
 			path = samplesUITests;
+			sourceTree = "<group>";
+		};
+		4EBAAD8925838C9C00683D2F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4EBAAD8A25838CB100683D2F /* PortalLoginView.swift */,
+				4EBAADA02583A10700683D2F /* TokenData.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		4EBAAD9A25838FCA00683D2F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4EBAAD9B25838FE000683D2F /* AdminDash.swift */,
+				4EBAADA52583BBE900683D2F /* DashData.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EBAAD4325835BD400683D2F /* ContentView.swift in Sources */,
+				4EBAAD8B25838CB100683D2F /* PortalLoginView.swift in Sources */,
+				4EBAADA12583A10700683D2F /* TokenData.swift in Sources */,
+				4EBAADA62583BBE900683D2F /* DashData.swift in Sources */,
 				4EBAAD4125835BD400683D2F /* samplesApp.swift in Sources */,
+				4EBAAD9C25838FE000683D2F /* AdminDash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
